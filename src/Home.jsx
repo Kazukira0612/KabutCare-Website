@@ -1,7 +1,5 @@
-import HomeImage from "./assets/image.jpeg";
-import badgeIcon from "./assets/badge-icon.png";
+
 import React, { useState, useRef } from "react";
-import HomeSpray from "./assets/spray2.jpg";
 import { FaBars, FaTimes } from "react-icons/fa";
 function Home() {
 
@@ -18,7 +16,7 @@ function Home() {
 
 
   return (
-    <div className="Home-container" id="Home">
+    <div className="Home-container">
         <header className="header">
             <h1 data-aos="fade-down" >KABOT CARE</h1>            
             <nav className="nav" ref={navRef}>
@@ -43,24 +41,7 @@ function Home() {
             </button>
 
         </header>
-
-        <main className="main">
-            <section className="hero">
-                <h4 data-aos="fade-up">Expert Cat behavior Solution</h4>
-                <h2 data-aos="fade-up">KABOT CARE</h2>
-                <p data-aos="fade-up">Care for your pets, care for your home.</p>
-                <button type="button" className="get-started-btn" >Get Started <i class="fa-solid fa-right-long"></i></button>
-            </section>
-        </main>
-
-            <div className="img-container">
-                    <img src={HomeSpray} className="img"/>
-                    <div className="img-card">
-                        <img src={badgeIcon} className="badge"/>
-                        <h3>99.9%</h3>
-                        <p>Happy & stress free</p>
-                    </div>
-            </div>        
+    
     </div>
   );
 }

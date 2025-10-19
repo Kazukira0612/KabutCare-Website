@@ -69,7 +69,7 @@ function Product() {
   return (
     <section className="product-section" id="Product"> 
       <div className="product-container">
-        <h2 data-aos="fade-up">Recommended Products</h2>
+        <h2 data-aos="fade-up" >Recommended Products</h2>
         <div className="product-slider">
           <Slider {...settings} >
             {products.map((product) => (
